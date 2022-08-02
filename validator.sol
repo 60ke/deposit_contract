@@ -7,17 +7,19 @@ contract Validate{
   mapping(address =>bool) public currentValidatorSet;
   address[] public Validators;
 
+
   constructor(){
+    Validators.push(0x0AF48384F2A5E6Af457FaEc584Dc5593d0Ad370e);
+    currentValidatorSet[0x0AF48384F2A5E6Af457FaEc584Dc5593d0Ad370e]=true;
+    Validators.push(0x29dA95fa6ed88b431218A54bd8dFEAD68918A3B5);
+    currentValidatorSet[0x29dA95fa6ed88b431218A54bd8dFEAD68918A3B5]=true;          
     Validators.push(0x38580eFe497b22ACc29783273e725a2a4F2AEEA4);
     currentValidatorSet[0x38580eFe497b22ACc29783273e725a2a4F2AEEA4]=true;
     Validators.push(0x3b6E67C4c837db054AC719892f871264E1456cDf);
     currentValidatorSet[0x3b6E67C4c837db054AC719892f871264E1456cDf]=true;
-    Validators.push(0x0AF48384F2A5E6Af457FaEc584Dc5593d0Ad370e);
-    currentValidatorSet[0x0AF48384F2A5E6Af457FaEc584Dc5593d0Ad370e]=true;
     Validators.push(0x947DD1558257a631049Fad9D686f427F86033c16);
     currentValidatorSet[0x947DD1558257a631049Fad9D686f427F86033c16]=true;
-    Validators.push(0x29dA95fa6ed88b431218A54bd8dFEAD68918A3B5);
-    currentValidatorSet[0x29dA95fa6ed88b431218A54bd8dFEAD68918A3B5]=true;                
+              
   }
 
 
